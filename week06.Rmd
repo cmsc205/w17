@@ -1,0 +1,43 @@
+---
+title: 'Week 6: The bootstrap and writing functions'
+output:
+  html_document
+---
+
+## Monday, Feb 6
+
+#### Introduction to the bootstrap
+
+* Bootstrap R notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day12/bootstrap.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day12/bootstrap.Rmd"download>(Download)</a>
+
+* Completed version of the notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day12/filled-bootstrap.nb.html)
+
+* [sf2016.csv](https://github.com/cmsc205/notes/raw/master/day12/sf2016.csv)
+
+#### For next time
+
+* Complete [Functions](https://campus.datacamp.com/courses/intermediate-r/chapter-3-functions?ex=1) chapter on DataCamp (this reinforces text manipulation)
+
+* Work on [project](project.html) proposal
+
+
+## Wednesday, Feb 8
+
+#### Writing functions
+
+* R notebook [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day13/functions.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day13/functions.Rmd"download>(Download)</a>
+
+
+#### For next time
+
+
+* Work on [project](project.html) proposal
+
+* Chapters 1 and 2 of [Writing Functions in R](https://www.datacamp.com/courses/writing-functions-in-r) DataCamp tutorial.
+
+* Check out [Hadley Wickham's style guide](http://adv-r.had.co.nz/Style.html) and [Google's style guide](https://google.github.io/styleguide/Rguide.xml). Pick your favorite and stick with the conventions outlined for the rest of the term.
+
+
+## Friday, Feb 10
+
+#### No class -- Midterm reading period

@@ -1,0 +1,31 @@
+---
+title: 'Finals: Project presentations'
+output:
+  html_document:
+    df_print: paged
+---
+
+## Tuesday, Mar 14
+
+#### Project presentations
+
+[Submit your project on github](https://classroom.github.com/group-assignment-invitations/226574205a3e6ea3205f7cb0a4191e03) by the beginning of the exam period.
+
+[Peer evaluation forms](https://goo.gl/forms/coRZbDnzSD4IV3fJ3). Fill out a form for each group.
+
+Order of presentations (randomly generated):
+
+      
+      
+```{r echo=FALSE}
+set.seed(1234)
+groups <- c("David, Deepta, Mihn, Peter, Shuangmu", 
+            "Aletta, Olivia, Shawn", 
+            "Bhavana, Claire, Eva, Trang", 
+            "Evan, Jack, Junlin, Megan", 
+            "Albin, Ryan, Hoa", 
+            "Felix, Mattias, Ryan, Ryan", 
+            "Danielle, Linder, Wes, Wyatt")
+presentations <- data.frame(Order = seq_along(groups), Group = sample(groups))
+presentations
+```

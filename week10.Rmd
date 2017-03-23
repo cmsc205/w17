@@ -1,0 +1,27 @@
+---
+title: 'Week 10: Maps + projects'
+output:
+  html_document
+---
+
+## Monday, Mar 6
+
+#### Chloropleth maps using ggplot2
+
+* <a href="https://github.com/cmsc205/notes/raw/master/day20/chloropleth.Rmd"download>R notebook (.Rmd)</a>
+* [2016_US_County_Level_Presidential_Results.csv](https://github.com/cmsc205/notes/raw/master/day20/2016_US_County_Level_Presidential_Results.csv)
+
+
+## Wednesday, Mar 8
+
+
+#### Making maps using ggplot2
+
+* <a href="https://github.com/cmsc205/notes/raw/master/day20/ggmap.Rmd"download>R notebook (.Rmd)</a>
+* [OKquakes.csv](https://github.com/cmsc205/notes/raw/master/day20/OKquakes.csv)
+* [CAquakes.csv](https://github.com/cmsc205/notes/raw/master/day20/CAquakes.csv)
+
+
+## Friday, Mar 10
+
+#### Project workshop

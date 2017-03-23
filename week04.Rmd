@@ -1,0 +1,45 @@
+---
+title: 'Week 4: Data Wrangling'
+output:
+  html_document
+---
+
+## Monday, Jan 23
+
+#### Introduction to `dplyr`
+
+* [Slides](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day07/wrangling2.html)
+* Data sets: [frenchfries.csv](https://github.com/cmsc205/data/raw/master/frenchfries.csv), [colleges2015.csv](https://github.com/cmsc205/data/raw/master/colleges2015.csv)
+
+#### For next time
+
+* Complete the [Data Manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial) DataCamp course by Friday (estimated time: 4 hours)
+
+
+## Wednesday, Jan 25
+
+#### Introduction to `dplyr`
+
+* [Slides](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day07/wrangling2.html)
+* Data sets: [frenchfries.csv](https://github.com/cmsc205/data/raw/master/frenchfries.csv), [colleges2015.csv](https://github.com/cmsc205/data/raw/master/colleges2015.csv)
+
+
+#### For next time
+
+* Complete the [Data Manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial) DataCamp course by Friday (estimated time: 4 hours)
+
+## Friday, Jan 27
+
+#### Joining data tables
+
+* <a href="https://github.com/cmsc205/notes/raw/master/day08/merging-notebook.Rmd" download>R notebook</a>
+* [Data folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/cmsc205/notes/tree/master/day08/data) (If you are a mac user, don't use Safari for this download)
+
+
+#### For next time
+
+* Form a group for homework #4 (no more than 4 people per group) and 
+
+* Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/cmsc205/hw4) with the assignment and begin working
+
+* After Prof. Loy creates the groups on GitHub you will need to accept the homework assignment as always, but you will have a group repository rather than an individual repository

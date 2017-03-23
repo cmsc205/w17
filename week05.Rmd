@@ -1,0 +1,48 @@
+---
+title: 'Week 5: Text data + scraping + programming structures'
+output:
+  html_document
+---
+
+## Monday, Jan 23
+
+#### Introduction to manipulating text with `stringr`
+
+* R notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day09/text_manipulation.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day09/text_manipulation.Rmd" download>(Download)</a>
+
+* Additional resources:
+
+    - [Regular expression handout](https://github.com/cmsc205/notes/blob/master/day09/regExp.pdf)
+    - [Text processing chapter](https://www.stat.auckland.ac.nz/~paul/ItDT/HTML/node69.html#SECTION001392000000000000000) from *Introduction to Data Technoogies* by Paul Murrell
+    
+
+#### For next time
+
+* Complete [Preparing data for analysis](https://campus.datacamp.com/courses/cleaning-data-in-r/1828?ex=1) chapter on DataCamp (this reinforces text manipulation)
+
+
+## Wednesday, Jan 25
+
+#### Introduction to scraping data from the web with `rvest`
+
+* R notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day10/web_scraping.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day10/web_scraping.Rmd" download>(Download)</a>
+
+#### For next time
+
+Finish the homework assignment
+
+## Friday, Jan 27
+
+#### Introduction to programming structures
+
+* Loops R notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day11/loops.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day11/loops.Rmd" download>(Download)</a>
+
+* Bootstrap R notebook: [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day11/bootstrap.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day11/bootstrap.Rmd"download>(Download)</a>
+
+* [sf2016.csv](https://github.com/cmsc205/notes/raw/master/day11/sf2016.csv)
+
+#### For next time
+
+* Chapters 1 and 2 of [Intermediate R](https://www.datacamp.com/courses/intermediate-r) DataCamp course
+
+* Work on [project](project.html) proposal

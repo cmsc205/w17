@@ -1,0 +1,44 @@
+---
+title: 'Week 7: Functions + classification'
+output:
+  html_document
+---
+
+## Monday, Feb 13
+
+#### Function writing workshop
+
+* Work on [HW5](https://classroom.github.com/assignment-invitations/88b4a638883634466f0d512c2b567f34) during class
+
+
+#### For next time
+
+* Finish your project proposal and bring a printed copy to class.
+
+
+## Wednesday, Feb 15
+
+#### Introduction to classification problems
+
+* k-nearest neighbors R notebook  [(View)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day14/classification.nb.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day14/classification.Rmd"download>(Download)</a>
+
+* [ckd.csv](https://raw.githubusercontent.com/cmsc205/notes/master/day14/data/ckd.csv)
+
+
+#### For next time
+
+Review notes
+
+
+## Friday, Feb 17
+
+#### Classification
+
+* K-nearest neighbors example <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day15/knn-activity.Rmd"download>(R notebook)</a> [(Caravan.csv)](https://raw.githubusercontent.com/cmsc205/notes/master/day15/Caravan.csv)
+
+* Introduction to classification trees [(Slides)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day15/classification-trees.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day15/classification-trees.Rmd"download>(.Rmd)</a>
+
+
+#### For next time
+
+Review notes

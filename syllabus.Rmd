@@ -1,0 +1,77 @@
+---
+title: "Syllabus"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+---
+
+**Instructor:** Adam Loy
+
+**Email:** adam.m.loy@lawrence.edu
+
+**Class Time/Location:** MWF 1:50--3:00 p.m. in Briggs 421
+
+**Office Hours:** MW 3:10--4:30 p.m., T 10:30 a.m.--noon, F 11:00 a.m.--12:30 p.m.
+
+### What is this course about?
+
+This class provides a practical foundation for you to compute with data in order to gain useful insights. Topics focus on elementary programming concepts in the R language and the necessary tools to handle, analyze and interpret data. Specifically, we will grapple with the key aspects of a data-scientific investigation:
+
+- Forming a statistical question
+- Acquiring and importing data
+- Tidying data
+- Exploring data
+- Modeling data
+- Communicating the results of the analysis
+
+This course will be taught in a workshop format, and you will complete regular assignments and a final project that provide hands-on programming/analysis experiences. 
+
+
+### Materials
+
+#### Required Textbook
+
+There is no required textbook to purchase for this course. Instead, we work through a list of recommended readings and tutorials that will be posted on the course webpage.
+
+#### Computing and Software
+
+The use of the R programming language with the RStudio interface (downloadable from rstudio.org) is an essential component of this course. You have two options for using RStudio:
+
+1. The **server** version of RStudio on the web at (http://rstudio.lawrence.edu/). The advantage
+of using the server version is that all of your work will be stored in the cloud, where it is automatically saved and backed up. This means that you can access your work from any computer on campus using a web browser. The downside is that you can't access the server off campus (yes, this includes Bjorklunden) and that you have to share limited computational resources with each other!
+
+2. A **local** version of RStudio installed on your machine. This is recommended due to the computational resources this course demands. The downside to this approach is that your work is only stored locally, but I get around this problem by keeping all of my work in a Dropbox folder. I will also show you how to use GitHub for version control.
+
+Note that you do not have to choose one or the other, you may use both. However, it is important that you understand the distinction so that you can keep track of your work. Both R and RStudio are free and open-source. 
+
+Unless otherwise noted, you should assume that it will be helpful to bring a laptop to class if you choose to use the **local** version of RStudio. There are 18 computers in our classroom, so you can access the server version of RStudio if you do not have a laptop that you can bring to class.
+
+### Evaluation
+
+
+#### 1) Homework 50%
+
+* Problem sets (40%) -- There will be several problem sets over the course of the term. Problem sets will involve computational assignments in R with written explanations. In order to streamline your workflow and my ability to comprehend your work, you should complete all of your homework assignments in R Markdown. All homework will be submitted electronically on GitHub.
+
+* R tutorials (10%) -- You will often be required to complete [DataCamp](https://www.datacamp.com/) tutorials in place of readings. You should have received an invitation link to the CMSC 205 DataCamp course, which allows you to access all of the tutorials on the site for free. DataCamp tutorials will be assigned on the course webpage.
+
+#### 2) Final Project 40%
+
+Much of this course is a build up to the final project, which is a capstone experience synthesizing everything you have learned over the course of the term. This is an opportunity for you to exercise your creativity and create something meaningful. This project will be wildly open-ended, and its evaluation will emphasize originality and ingenuity in addition to sophistication and complexity. More details about the project will follow.
+
+#### 3) Engagement 10%
+
+*You will only get as much out of this class as you put in.* I am including your level of engagement as part of your final grade to remind you of this fact. Your attendance in class is crucial, as is your punctuality; however, attending class is not sufficient to be a fully engaged student. Being prepared, diligently working on class examples, asking questions, and attending office hours are all examples of how you can show me that you are engaged in the course.
+
+
+### Honor Code
+> *No Lawrence student will unfairly advance their own academic performance or in any way limit or impede the academic pursuits of other students of the Lawrence community.* 
+
+All students are expected to uphold Lawrence University’s Honor Code. You will often be encouraged to work collaboratively, but copying and pasting sentences, paragraphs, or blocks of R code is not acceptable. All of your written work must be accompanied by a reaffirmation of the Honor Code.
+
+### Disability Policy
+Lawrence University is committed to providing reasonable accommodations for students with disabilities. Students establish eligibility and request accommodations through the Center for Academic Success. View the Accessibility Services web page at [go.lawrence.edu/cas](go.lawrence.edu/cas) for more information.
+
+### Healthy Balance
+All members of the Lawrence community—students, staff, and faculty—have the responsibility to promote balance in their lives by making thoughtful choices. Balance results from two skills: avoiding imbalance through careful planning, and managing and containing imbalance when it occurs. This course will be demanding, but should not overwhelm your academic (let alone whole) life. If it threatens to, come talk to me, a tutor, friend, counselor, or advisor.

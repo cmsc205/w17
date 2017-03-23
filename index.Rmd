@@ -1,0 +1,51 @@
+---
+title: "Data-Scientific Programming"
+---
+
+<img src="./_assets/pipeline.png" alt="Drawing" style="width: 700px;" border="1"/>
+
+## Schedule
+
+January 4
+
+#### [Week One: An introduction to R](week01.html)
+
+January 9
+
+#### [Week Two: Exploratory data analysis](week02.html)
+
+January 16
+
+#### [Week Three: Perception + Data wrangling](week03.html)
+
+January 23
+
+#### [Week Four: Data wrangling](week04.html)
+
+January 30
+
+#### [Week Five: Text data + scraping + programming structures](week05.html)
+
+February 6
+
+#### [Week Six: The bootstrap + writing functions](week06.html)
+
+February 13
+
+#### [Week Seven: Functions + classification](week07.html)
+
+February 20
+
+#### [Week Eight: Classification + interactive reports](week08.html)
+
+February 27
+
+#### [Week Nine: Shiny apps](week09.html)
+
+March 6
+
+#### [Week Ten: Maps + projects](week10.html)
+
+March 14
+
+#### [Final exam period](finals.html)

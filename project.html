@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Project</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CMSC 205</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">
+    <span class="fa fa-info"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li>
+  <a href="homework.html">
+    <span class="fa fa-pencil-square"></span>
+     
+    Homework
+  </a>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-file-text"></span>
+     
+    Projects
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-life-ring"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="http://rstudio.lawrence.edu/">RStudio Server</a>
+</li>
+<li>
+  <a href="https://piazza.com/class/ixietp9u9iv4nc">Piazza</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Project</h1>
+
+</div>
+
+
+<div id="overall-goals-and-principles" class="section level3">
+<h3>1. Overall Goals and Principles</h3>
+<p>Your final assignment in this course will be to work on a group data science project. The goal of the project is to go through the complete data science process to answer questions you have about some topic of your choosing. You will need to acquire your data, design your visualizations, run analyses, and communicate the results. The project is an opportunity to show off what you’ve learned about data science. Your task is to use data to tell us something interesting. This project is deliberately open-ended to allow you to fully explore your creativity. Here are the main rules that must be followed:</p>
+<p><strong>Use the materials learned in this class.</strong> Both the computational and statistical tools learned.</p>
+<p><strong>Your project must be centered around real data.</strong> You will work with large, complex, and/or messy data. While this is not an explicit requirement of the project, the more challenging your data set is, the more you will have to use the tools learned in this class. For example, one thing that will make your data science project more ambitious is combining two or more data sets that are not directly related.</p>
+<p><strong>Your project must tell us something.</strong> There is a range of data science projects that can satisfy this. We’ve seen a range of examples over the course of the semester. On one extreme would be a strict visualization based project that involves little statistical analysis. On the other extreme are data mining/machine learning projects, which involve no visualization. Your project can be anywhere on this spectrum, but expectations may be different depending on where you are on the scale. An example of a project that doesn’t tell us anything, would be something that downloads a single data source and summarizes it, with some perfunctory visualization. Make sure that your project is thought-provoking and has some underlying meaning!</p>
+<p><strong>Cleverness and creativity will be rewarded.</strong> Going above and beyond what we did in class will be rewarded.</p>
+</div>
+<div id="project-deadlinescheckpoints" class="section level3">
+<h3>2. Project Deadlines/Checkpoints</h3>
+<p>A timeline of the project is:</p>
+<ul>
+<li>Week 7: Proposal due 2/15 at 1:50 p.m.</li>
+<li>Week 8: Data collection and cleaning finished</li>
+<li>Week 9: EDA finished</li>
+<li>Week 10: Analysis finished</li>
+<li>Tuesday, March 14: Written report due at 11:30 a.m. and oral presentations begin</li>
+</ul>
+</div>
+<div id="teams" class="section level3">
+<h3>3. Teams</h3>
+<p>You will work closely with other classmates in a 3-4 person project team. If you can’t find a partner I will randomly assign you to a team. In general, I do not anticipate that the grades for each group member will be different; however, I reserve the right to assign different grades to each group member based on peer assessments of your contributions.</p>
+</div>
+<div id="the-proposal" class="section level3">
+<h3>4. The proposal</h3>
+<p>Your proposal is to be submitted in print or electronically. Once you decide on a topic that interests you, think about what you would like to end up with as a final result without worrying about how to get there. Try to visualize what your end product will look like. Will it be an interactive map? A predictive model? Don’t think about coding, or a particular data set, or what you know how to do now. If you come up with something ambitious and original, you’ll be more motivated to learn new things as you go in order to accomplish your goal. The topic is completely open to your choice, but keep in mind the rules listed above.</p>
+<p>Your proposals should contain the following content:</p>
+<ul>
+<li>Title: The title of your project</li>
+<li>Purpose: Describe the general topic/phenomenon you want to explore, as well some carefully considered questions that you hope to address. You should make an argument motivating your work. Why should someone be interested in what you are doing? What do you hope people will learn from your project?</li>
+<li>Data: As best you can, describe where you will find your data, and what kind of data it is. Will you be working with spatial data in shapefiles? Where will you be accessing you data? Be as specific as you can, listing URLs and file formats if possible.</li>
+<li>Variables: List, and briefly describe, each variable that you plan to incorporate. If you can, be specific about units, scale, etc.</li>
+<li>End Product: Describe what you hope to deliver as a final product.
+<ul>
+<li>Will it be an interactive application that will be posted on the Internet?</li>
+<li>Will it be a paper that draws some statistical conclusions?</li>
+<li>Will it be a model that classifies observations into groups?</li>
+</ul></li>
+</ul>
+</div>
+<div id="the-presentation" class="section level3">
+<h3>5. The presentation</h3>
+<p>An effective oral presentation is an integral part of this project. One of the objectives of this class is to give you experience conveying the results of a technical investigation to a non-technical audience in a way that they can understand. Whether you choose to stay in academia or pursue a career in industry, the ability to communicate clearly is of paramount importance. As a data scientist, the burden of proof is on you to convince your audience that what you are saying is true. If your audience (who may very well be less knowledgeable about statistics than you are) cannot understand your results or their interpretations, then the technical merit of your project is irrelevant.</p>
+<p>During the the final exam period, each group will give a 15 minute presentation of your work. Your goal should be to convey to your audience a clear understanding of your research topic, along with a basic understanding of your project, and how well it addresses the research question you posed. You should not tell us everything that you did, or show a bunch of things that you tried that didn’t work well. After hearing your talk, each student in the class should be able to answer:</p>
+<ol style="list-style-type: decimal">
+<li>What was your project about?</li>
+<li>What was your data like, and what techniques did you apply to it?</li>
+<li>What were your findings?</li>
+</ol>
+<p>You should prepare electronic slides for your talk. PowerPoint/Keynote is fine, but you might also want to consider</p>
+<ul>
+<li>RStudio tools: R Markdown slides</li>
+<li>Beamer (LaTeX)</li>
+<li>Google Slides</li>
+</ul>
+<div id="advice" class="section level4">
+<h4>Advice</h4>
+<ul>
+<li>Budget your time. You only have 15 minutes and we will be running a very tight schedule. Plan for 12 minutes to talk, and 3 minutes to answer questions. Rehearse your talk ahead of time several times in order to get a better feel for your timing.</li>
+<li>As a rule of thumb I use the one minute per slide rule.</li>
+<li>Don’t write too much on each slide. You don’t want people to have to read your slides, because if the audience is reading your slides, then they aren’t listening to you.</li>
+<li>Put your problem in context. Remember that most of your audience will have little or no knowledge of your subject matter. The easiest way to lose people is to dive right into technical details that require prior domain knowledge. Spend a few minutes at the beginning of your talk introducing your audience to the most basic aspects of your topic and present some motivation for what you are studying.</li>
+<li>Speak loudly and clearly. Remember that you know more about your topic that anyone else in the room, so speak and act with confidence!</li>
+</ul>
+</div>
+</div>
+<div id="report" class="section level3">
+<h3>6. Report</h3>
+<p>Your report must be a reproducible R Markdown HTML document that when printed is of length no more than 15 pages—i.e. I should be able to recreate your entire analysis with one click of the mouse.</p>
+<p>In your write-up, you should tell a data science audience about your project, why they should care about it, and what you have discovered. Your audience will be people like you: current or aspiring data scientists. Keep in mind that this audience is extraordinarily diverse in terms of skills and abilities, so you should assume very little about what they might know. However, your audience is reasonably tech-savvy, so you need not “dumb-down” your analysis. Your write-up should make it clear to me and any other student in the class what methods and techniques you have used to produce your finished product.</p>
+<div id="content" class="section level4">
+<h4>Content</h4>
+<p>Do not present <em>all</em> of the R code that you wrote throughout the process of working on this project. In fact</p>
+<ul>
+<li>The amount of R code in the <strong>outputted</strong> document should be minimal. The less R code the better.</li>
+<li>Important conclusions should appear in the main text, not in comments in the code.</li>
+<li>The R markdown file should contain the necessary and sufficient (i.e. minimal) set of R code that is necessary to understand your results and findings. If you make a claim, it must be justified by explicit calculation. A knowledgeable reviewer should be able to reproduce your analysis:
+<ul>
+<li>Compile your .Rmd file without modification</li>
+<li>Verify every statement that you have made.</li>
+</ul></li>
+</ul>
+</div>
+<div id="motivation" class="section level4">
+<h4>Motivation</h4>
+<p>Be sure to motivate your topic at the beginning of your write-up. You should try to hook the reader early on. Assume that your audience is a skeptical data scientist who has stumbled across your report but has very little time to read it. Can you give them a reason to continue reading? A cool visualization or result can help.</p>
+</div>
+<div id="format" class="section level4">
+<h4>Format</h4>
+<p>You don’t need to follow a specific format in the write-up, but you should start with an introductory paragraph and finish with a conclusion. Your write-up should address the following questions:</p>
+<ol style="list-style-type: decimal">
+<li>Why should anyone care about this?</li>
+<li>What is this about? Do not assume that your readers have any domain knowledge! The burden of explanation as to what you are talking about is on you! For example, if your project involves phyllogenetic trees, do not assume that your audience has anything other than a basic, lay understanding of genetics.</li>
+<li>Where did your data come from? What kind of data was it? Is there a link to the data or some other way for the reader to follow up on your work?</li>
+<li>What are your findings? What kind of statistical computations (if any) have you done to support those conclusions? Again, while the R code will show you performing the calculation, it is up to you to interpret, in English sentences, the results of these calculations. Do not forget about units, axis labels, etc.</li>
+<li>What are the limitations of your work? Be clear so that others do not misinterpret your findings. To what population do your results apply? Do they generalize? How could your study be improved? Suggesting plausible extensions don’t weaken your work, they strengthen it by connecting it to future work.</li>
+</ol>
+</div>
+<div id="style" class="section level4">
+<h4>Style</h4>
+<p>The write-up can have interactive components. Take advantage of this by including hyperlinks, figures, videos, etc. to provide context for the reader. You can even include a <a href="http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html">bibiliography</a>, and your references should be embedded via links. Use Markdown elements like links, lists, LaTeX, and images as needed.</p>
+<p>Visualizations, particularly interactive ones, will be well-received. That said, do not overuse visualizations. You may be better off with one complicated but well-crafted visualization as opposed to many quick-and-dirty plots. Any plots should be well-thought out, properly labelled, informative, and visually appealing!</p>
+<!-- ### R Markdown Process Book -->
+<!-- An important part of your project is your R Markdown process book. Your process book details the steps you take in developing your solution, including how you collected the data, alternative solutions you tried, describing statistical methods you used, and the insights you got. Equally important to your final results is how you got there! Your process book is the place you describe and document the space of possibilities you explored at each step of your project. We strongly advise you to include many visualizations in your process book. Your process book should include the following topics. Depending on your project type the amount of discussion you devote to each of them will vary: -->
+<!-- * Overview and Motivation: Provide an overview of the project goals and the motivation for it. Consider that this will be read by people who did not see your project proposal. -->
+<!-- * Related Work: Anything that inspired you, such as a paper, a web site, or something we discussed in class. -->
+<!-- * Initial Questions: What questions are you trying to answer? How did these questions evolve over the course of the project? What new questions did you consider in the course of your analysis?  -->
+<!-- * Data: Source, scraping method, cleanup, storage, etc. -->
+<!-- * Exploratory Data Analysis: What visualizations did you use to look at your data in different ways? What are the different statistical methods you considered? Justify the decisions you made, and show any major changes to your ideas. How did you reach these conclusions? -->
+<!-- * Final Analysis: What did you learn about the data? How did you answer the questions? How can you justify your answers? -->
+<!-- * Presentation: Present your final results in a compelling and engaging way using text, visualizations, images, and videos. -->
+</div>
+</div>
+<div id="code" class="section level3">
+<h3>Code</h3>
+<p>I expect you to write high-quality and readable R code as part of your final report. You should strive to do things the right way and think about aspects such as reusability, error handling, etc. I also expect you to comment your code.</p>
+</div>
+<div id="rubrics" class="section level3">
+<h3>Rubrics</h3>
+<ul>
+<li><p><a href="https://docs.google.com/spreadsheets/d/1po3LOj-hWa5ZvI6QkXnFRx7tFNwx0OAjdCVbBvkbR-Y/edit?usp=sharing">Presentation rubric</a></p></li>
+<li><p><a href="https://docs.google.com/spreadsheets/d/1x8aLGfhiVSRyP4ATaa7pGMkfRBZgA9vFbWJSFGi8uzo/edit?usp=sharing">Report rubric</a></p></li>
+</ul>
+</div>
+<div id="acknowledgements" class="section level3">
+<h3>Acknowledgements</h3>
+<p>The project description was adapted from <a href="https://rudeboybert.github.io/MATH216/assets/Final_Project/project.html">Albert Kim</a> and <a href="http://cs109.github.io/2015/pages/projects.html">CS109</a> at Harvard.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+name: "cmsc-205"
+output_dir: "."
+navbar:
+  title: "CMSC 205"
+  left:
+    - text: "Syllabus"
+      icon: fa-info
+      href: syllabus.html
+    - text: "Homework"
+      icon: fa-pencil-square
+      href: homework.html
+    - text: "Projects"
+      icon: fa-file-text
+      href: project.html
+    - text: "Resources"
+      icon: fa-life-ring
+      href: resources.html
+    - text: RStudio Server
+      href: http://rstudio.lawrence.edu/
+    - text: "Piazza"
+      icon:
+      href: https://piazza.com/class/ixietp9u9iv4nc

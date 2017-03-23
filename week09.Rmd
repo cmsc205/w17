@@ -1,0 +1,38 @@
+---
+title: 'Week 9: Shiny apps'
+output:
+  html_document
+---
+
+## Monday, Feb 27
+
+#### A second shiny app
+
+Materials for class:
+
+* <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day19/exercise2.Rmd"download>Notes</a>
+* [sf2016_sample.csv](https://github.com/cmsc205/notes/raw/master/day19/sf2016_sample.csv) 
+
+Resources for shiny:
+
+* [Shiny tutorial](http://shiny.rstudio.com/tutorial/)
+* [Shiny cheat sheet](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+* [Shiny gallery](https://shiny.rstudio.com/gallery/)
+
+
+
+#### For next time
+
+Review notes on shiny
+
+
+
+## Wednesday, Mar 1
+
+#### Shiny app for the one-sample bootstrap
+
+[My solution](https://github.com/cmsc205/notes/blob/master/day19/exercise2-sol.Rmd)
+
+## Friday, Mar 3
+
+#### Project workshop

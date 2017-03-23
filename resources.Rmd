@@ -1,0 +1,23 @@
+---
+title: "Resources"
+---
+
+### R
+
+* [Cookbook for R](http://www.cookbook-r.com/)
+* [Getting used to R, R Studio, and R markdown](https://rudeboybert.github.io/rbasics-book/index.html) by Kim and Ismay
+
+### R Studio
+
+* [RStudio IDE cheat sheet](http://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+
+### R Markdown
+
+* R markdown [debugging sheet](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/edit?usp=sharing) (go through these steps first)
+* R markdown [cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+### Git and GitHub
+
+* [Happy Git and GitHub for the useR](http://happygitwithr.com/)
+
+

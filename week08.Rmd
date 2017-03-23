@@ -1,0 +1,46 @@
+---
+title: 'Week 8: Classification + interactive reports'
+output:
+  html_document
+---
+
+## Monday, Feb 20
+
+#### Classification trees
+
+* Introduction to classification trees [(Slides)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day16/classification-trees.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day16/classification-trees.Rmd"download>(.Rmd)</a>
+
+* Activity <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day16/classification-tree-lab.Rmd"download>R notebook</a>, [Carseats.csv](https://raw.githubusercontent.com/cmsc205/notes/master/day16/Carseats.csv)
+
+#### For next time
+
+Review notes
+
+## Wednesday, Feb 22
+
+#### Bagging and random forests
+
+* From trees to forests [(Slides)](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day17/random-forests.html)  <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day17/random-forests.Rmd"download>(.Rmd)</a>
+
+#### For next time
+
+Work on the homework
+
+
+## Friday, Feb 24
+
+#### Interactive apps with shiny
+
+Materials for class:
+
+* Install the `shiny` package
+* [babynames.csv](https://github.com/cmsc205/data/raw/master/babynames.csv) (if you're not on the server, then downloade the `babynames` package instead)
+* [Example prompt](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day18/exercise-slide.html#1)
+
+Resources for shiny:
+
+* [Shiny tutorial](http://shiny.rstudio.com/tutorial/)
+* [Shiny cheat sheet](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+* [Shiny gallery](https://shiny.rstudio.com/gallery/)
+
+

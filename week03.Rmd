@@ -1,0 +1,40 @@
+---
+title: 'Week 3: Perception and Intro to Data Wrangling'
+output:
+  html_document
+---
+
+## Monday, Jan 16
+
+#### No Class -- MLK, Jr. Day
+
+
+## Wednesday, Jan 18
+
+#### Visual Perception
+
+* [Slides](https://github.com/cmsc205/notes/blob/master/day05/perception-slides.pdf)
+
+
+#### For next time
+
+* Complete Chapters 1 and 2 of the [Cleaning Data in R](https://www.datacamp.com/courses/cleaning-data-in-r) DataCamp tutorial.
+
+* Start [HW3](https://classroom.github.com/assignment-invitations/c1940c617b40c3090ae55efc920f6ba7), which is due 1/23 by 1:50 p.m.
+
+
+## Friday, Jan 20
+
+#### Tidy data
+
+* Download the [.Rmd file](https://raw.githubusercontent.com/cmsc205/notes/master/day06/IntroTidyData.Rmd)
+
+* Download the data sets [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/cmsc205/notes/tree/master/day06/data). If you are on a Mac, then you should use either Chrome or Firefox to download the zip file.
+
+* Start up instructions
+    
+    1. Download the .Rmd file and the data sets.
+    2. Start a new project in R Studio for today's class.
+    3. If you are working on the server, then upload the .Rmd file and the zip file with the data sets (**before** unzipping them). If you are working on your own computer, move the downloaded files to the project folder and unzip the data set file (but leave the files in the data folder).
+    4. You're ready to work!
+    

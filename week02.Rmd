@@ -1,0 +1,55 @@
+---
+title: "Week 2: Exploratory graphics"
+output:
+  html_document
+---
+
+## Monday, Jan 9
+
+#### Introduction to `ggplot2`
+
+* [Slides](http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day02/ggplot-notes.html)
+
+* [Births78.csv](https://github.com/cmsc205/data/raw/master/Birth78.csv)
+
+
+#### For next time
+
+* Complete chapters 3--5 of [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r).
+
+* Read about bar charts, boxplots, density plots, histograms, line charts, and scatterplots on [The Data Visualisation Catalogue](http://www.datavizcatalogue.com/).
+
+#### After-class updates
+
+As pointed out in class, we need to manually convert the `date` column of the data set from a character vector to a date format. The below code chunk can be used to read in the data set and complete this conversion:
+
+```{r eval=FALSE}
+library(lubridate) # for the as_date function
+
+# Read in and convert
+Births78 <- read.csv("https://github.com/cmsc205/data/raw/master/Birth78.csv")
+Births78$date <- as_date(Births78$date)
+
+# Check the structure to make sure that date is of the Date format
+```
+
+
+## Wednesday, Jan 11
+
+#### More about `ggplot2`
+
+* [R notebook](https://github.com/cmsc205/notes/raw/master/day03/ggplot2-continued.Rmd) 
+    - [Completed R notebook](https://github.com/cmsc205/notes/raw/master/day03/ggplot2-continued-sol.Rmd) from class
+
+* [saratoga.csv](https://github.com/cmsc205/data/raw/master/saratoga.csv)
+
+
+## Friday, Jan 13
+
+#### Customizing graphics
+
+* [Warm up activity](https://github.com/cmsc205/notes/raw/master/day04/Economist-Graph.pdf)
+
+* [R notebook](https://raw.githubusercontent.com/cmsc205/notes/master/day04/customizing-plots.Rmd)
+
+* Data for today: [ScorecardSmallNarrow.csv](https://github.com/cmsc205/data/raw/master/ScorecardSmallNarrow.csv), [top10babynames2014.csv](https://github.com/cmsc205/data/raw/master/top10babynames2014.csv)

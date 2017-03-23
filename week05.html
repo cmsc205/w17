@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Week 5: Text data + scraping + programming structures</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CMSC 205</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">
+    <span class="fa fa-info"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li>
+  <a href="homework.html">
+    <span class="fa fa-pencil-square"></span>
+     
+    Homework
+  </a>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-file-text"></span>
+     
+    Projects
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-life-ring"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="http://rstudio.lawrence.edu/">RStudio Server</a>
+</li>
+<li>
+  <a href="https://piazza.com/class/ixietp9u9iv4nc">Piazza</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Week 5: Text data + scraping + programming structures</h1>
+
+</div>
+
+
+<div id="monday-jan-23" class="section level2">
+<h2>Monday, Jan 23</h2>
+<div id="introduction-to-manipulating-text-with-stringr" class="section level4">
+<h4>Introduction to manipulating text with <code>stringr</code></h4>
+<ul>
+<li><p>R notebook: <a href="http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day09/text_manipulation.nb.html">(View)</a> <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day09/text_manipulation.Rmd" download>(Download)</a></p></li>
+<li><p>Additional resources:</p>
+<ul>
+<li><a href="https://github.com/cmsc205/notes/blob/master/day09/regExp.pdf">Regular expression handout</a></li>
+<li><a href="https://www.stat.auckland.ac.nz/~paul/ItDT/HTML/node69.html#SECTION001392000000000000000">Text processing chapter</a> from <em>Introduction to Data Technoogies</em> by Paul Murrell</li>
+</ul></li>
+</ul>
+</div>
+<div id="for-next-time" class="section level4">
+<h4>For next time</h4>
+<ul>
+<li>Complete <a href="https://campus.datacamp.com/courses/cleaning-data-in-r/1828?ex=1">Preparing data for analysis</a> chapter on DataCamp (this reinforces text manipulation)</li>
+</ul>
+</div>
+</div>
+<div id="wednesday-jan-25" class="section level2">
+<h2>Wednesday, Jan 25</h2>
+<div id="introduction-to-scraping-data-from-the-web-with-rvest" class="section level4">
+<h4>Introduction to scraping data from the web with <code>rvest</code></h4>
+<ul>
+<li>R notebook: <a href="http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day10/web_scraping.nb.html">(View)</a> <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day10/web_scraping.Rmd" download>(Download)</a></li>
+</ul>
+</div>
+<div id="for-next-time-1" class="section level4">
+<h4>For next time</h4>
+<p>Finish the homework assignment</p>
+</div>
+</div>
+<div id="friday-jan-27" class="section level2">
+<h2>Friday, Jan 27</h2>
+<div id="introduction-to-programming-structures" class="section level4">
+<h4>Introduction to programming structures</h4>
+<ul>
+<li><p>Loops R notebook: <a href="http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day11/loops.nb.html">(View)</a> <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day11/loops.Rmd" download>(Download)</a></p></li>
+<li><p>Bootstrap R notebook: <a href="http://htmlpreview.github.io/?https://github.com/cmsc205/notes/blob/master/day11/bootstrap.nb.html">(View)</a> <a href="https://raw.githubusercontent.com/cmsc205/notes/master/day11/bootstrap.Rmd"download>(Download)</a></p></li>
+<li><p><a href="https://github.com/cmsc205/notes/raw/master/day11/sf2016.csv">sf2016.csv</a></p></li>
+</ul>
+</div>
+<div id="for-next-time-2" class="section level4">
+<h4>For next time</h4>
+<ul>
+<li><p>Chapters 1 and 2 of <a href="https://www.datacamp.com/courses/intermediate-r">Intermediate R</a> DataCamp course</p></li>
+<li><p>Work on <a href="project.html">project</a> proposal</p></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
